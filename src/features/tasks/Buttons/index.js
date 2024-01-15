@@ -8,6 +8,7 @@ import {
   selectAreTasksEmpty,
   selectIsAnyTaskDone,
   selectIsEveryTaskDone,
+  fetchExampleTasks,
 } from "../tasksSlice";
 
 const Buttons = () => {
@@ -19,24 +20,29 @@ const Buttons = () => {
   const dispatch = useDispatch();
 
   return (
-    !areTasksEmpty && (
-      <ButtonsWrapper>
-        <Button
-          onClick={() => dispatch(toggleHideDone())}
-          disabled={!isAnyTaskDone}
-        >
-          {" "}
-          {hideDone ? "Pokaż" : "Ukryj"} ukończone{" "}
-        </Button>
-        <Button
-          disabled={isEveryTaskDone}
-          onClick={() => dispatch(setAllDone())}
-        >
-          {" "}
-          Ukończ wszystkie{" "}
-        </Button>
-      </ButtonsWrapper>
-    )
+    <ButtonsWrapper>
+      <Button onClick={() => dispatch(fetchExampleTasks())}>
+        Load example Tasks
+      </Button>
+      {!areTasksEmpty && (
+        <>
+          <Button
+            onClick={() => dispatch(toggleHideDone())}
+            disabled={!isAnyTaskDone}
+          >
+            {" "}
+            {hideDone ? "Pokaż" : "Ukryj"} ukończone{" "}
+          </Button>
+          <Button
+            disabled={isEveryTaskDone}
+            onClick={() => dispatch(setAllDone())}
+          >
+            {" "}
+            Ukończ wszystkie{" "}
+          </Button>
+        </>
+      )}
+    </ButtonsWrapper>
   );
 };
 
