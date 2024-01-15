@@ -12,6 +12,5 @@ function* fetchExampleTasksHandler() {
 }
 
 export function* watchFetchExampleTasks() {
-  console.log("saga jest podlaczona");
   yield takeEvery(fetchExampleTasks.type, fetchExampleTasksHandler);
 }
