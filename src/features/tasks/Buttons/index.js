@@ -22,7 +22,7 @@ const Buttons = () => {
   return (
     <ButtonsWrapper>
       <Button onClick={() => dispatch(fetchExampleTasks())}>
-        Load example Tasks
+        Load example tasks
       </Button>
       {!areTasksEmpty && (
         <>
