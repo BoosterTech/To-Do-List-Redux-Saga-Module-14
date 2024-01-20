@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const Wrapper = styled.section`
   background-color: ${({ theme }) => theme.color.White};
-  margin: 10px;
+  margin: 10px 0;
+  padding: 0 10px 10px;
 `;
 
 export const SectionContainer = styled.div`
@@ -23,7 +24,7 @@ export const SectionContainer = styled.div`
 
 export const Header = styled.h2`
   ${(props) =>
-    props.headerType === "section__headerTop" &&
+    props.headertype === "section__headerTop" &&
     `
     padding: 30px 0 0 15px;
     font-weight: bold;
@@ -31,7 +32,7 @@ export const Header = styled.h2`
     `}
 
   ${(props) =>
-    props.headerType === "section__header" &&
+    props.headertype === "section__header" &&
     `
       padding: 15px;
       font-weight: bold;

@@ -4,6 +4,7 @@ import Buttons from "./Buttons";
 import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import { MainWrapper } from "../../../common/MainWrapper/styled";
+import Search from "./Search";
 
 function TasksPage() {
   return (
@@ -12,14 +13,19 @@ function TasksPage() {
       <Section
         title="Dodaj nowe zadanie"
         bodyContent={<Form />}
-        headerType="section__headerTop"
+        headertype="section__headerTop"
+      />
+      <Section
+        title="Wyszukiwarka"
+        bodyContent={<Search />}
+        headertype="section__headerTop"
       />
       <Section
         title="Lista zadań"
         extraHeaderContent={<Buttons />}
         bodyContent={<TaskList />}
         id="section__flex"
-        headerType="section__header"
+        headertype="section__header"
       />
     </MainWrapper>
   );

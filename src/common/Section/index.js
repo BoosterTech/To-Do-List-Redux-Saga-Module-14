@@ -6,11 +6,11 @@ const Section = ({
   extraHeaderContent,
   bodyContent,
   id,
-  headerType,
+  headertype,
 }) => (
   <Wrapper>
     <SectionContainer id={id}>
-      <Header headerType={headerType}>{title}</Header>
+      <Header headertype={headertype}>{title}</Header>
       {extraHeaderContent}
     </SectionContainer>
     {bodyContent}

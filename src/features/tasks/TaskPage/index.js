@@ -19,7 +19,7 @@ const TaskPage = () => {
             <strong>Completed: {task.done ? "Yes" : "No"}</strong>
           </>
         }
-        headerType="section__headerTop"
+        headertype="section__headerTop"
       />
     </MainWrapper>
   );

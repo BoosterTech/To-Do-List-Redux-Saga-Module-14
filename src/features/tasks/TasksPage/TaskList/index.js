@@ -1,28 +1,39 @@
 import React from "react";
 import { Button, ListItem, TaskContent, TaskListStyled } from "./styled";
 import { useSelector, useDispatch } from "react-redux";
-import { selectTasksState, toggleTaskDone, removeTask } from "../../tasksSlice";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import {
+  selectTasksState,
+  toggleTaskDone,
+  removeTask,
+  selectTasksByQuery,
+} from "../../tasksSlice";
+import { Link, useLocation } from "react-router-dom/cjs/react-router-dom.min";
 
 const TaskList = () => {
-  const { tasks, hideDone } = useSelector(selectTasksState);
+  const location = useLocation();
+  const query = new URLSearchParams(location.search).get("search");
+
+  const { tasks } = useSelector((state) => selectTasksByQuery(state, query));
+
+  const { hideDone } = useSelector(selectTasksState);
   const dispatch = useDispatch();
 
   return (
     <TaskListStyled>
-      {tasks.map((task, id) => (
-        <ListItem key={id} hidden={hideDone && task.done}>
-          <Button done onClick={() => dispatch(toggleTaskDone(task.id))}>
-            {task.done ? "✓" : ""}
-          </Button>
-          <TaskContent done={task.done}>
-            <Link to={`/tasks/${task.id}`}>{task.content}</Link>
-          </TaskContent>
-          <Button remove onClick={() => dispatch(removeTask(task.id))}>
-            🗑️
-          </Button>
-        </ListItem>
-      ))}
+      {Array.isArray(tasks) &&
+        tasks.map(task => (
+          <ListItem key={task.id} hidden={hideDone && task.done}>
+            <Button done onClick={() => dispatch(toggleTaskDone(task.id))}>
+              {task.done ? "✓" : ""}
+            </Button>
+            <TaskContent done={task.done}>
+              <Link to={`/tasks/${task.id}`}>{task.content}</Link>
+            </TaskContent>
+            <Button remove onClick={() => dispatch(removeTask(task.id))}>
+              🗑️
+            </Button>
+          </ListItem>
+        ))}
     </TaskListStyled>
   );
 };
