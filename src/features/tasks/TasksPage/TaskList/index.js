@@ -16,7 +16,7 @@ const TaskList = () => {
             {task.done ? "✓" : ""}
           </Button>
           <TaskContent done={task.done}>
-            <Link to={`/zadania/${task.id}`}>{task.content}</Link>
+            <Link to={`/tasks/${task.id}`}>{task.content}</Link>
           </TaskContent>
           <Button remove onClick={() => dispatch(removeTask(task.id))}>
             🗑️
