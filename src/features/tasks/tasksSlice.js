@@ -59,6 +59,10 @@ export const getTaskById = (state, taskId) =>
 export const selectTasksByQuery = (state, query) => {
   const tasks = selectTasksState(state);
  
+  if (!Array.isArray(tasks)) {
+    // If tasks is not an array, return an empty array or handle it as needed.
+    return tasks;
+  }
   if (!query || query.trim() === "") {
     return tasks;
   }
