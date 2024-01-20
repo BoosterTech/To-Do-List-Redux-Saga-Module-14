@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.section`
   background-color: ${({ theme }) => theme.color.White};
-  margin: 10px 0;
+  margin: 10px;
 `;
 
 export const SectionContainer = styled.div`
