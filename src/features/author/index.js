@@ -9,7 +9,7 @@ const Author = () => (
     <Section
       title="Dariusz Podczasik"
       bodyContent={<Content/>}
-      headertype="section__headerTop"
+      headertype="section__author"
     />
   </MainWrapper>
 );
