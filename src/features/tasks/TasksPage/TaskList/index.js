@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, ListItem, TaskContent, TaskListStyled } from "./styled";
+import { Button, ListItem, TaskContent, TaskLink, TaskListStyled } from "./styled";
 import { useSelector, useDispatch } from "react-redux";
 import {
   selectTasksState,
@@ -13,7 +13,8 @@ const TaskList = () => {
   const location = useLocation();
   const query = new URLSearchParams(location.search).get("search");
 
-  const { tasks } = useSelector((state) => selectTasksByQuery(state, query));
+  const { tasks } = useSelector(selectTasksState);
+  // ((state) => selectTasksByQuery(state, query));
 
   const { hideDone } = useSelector(selectTasksState);
   const dispatch = useDispatch();
@@ -21,13 +22,13 @@ const TaskList = () => {
   return (
     <TaskListStyled>
       {Array.isArray(tasks) &&
-        tasks.map(task => (
+        tasks.map((task) => (
           <ListItem key={task.id} hidden={hideDone && task.done}>
             <Button done onClick={() => dispatch(toggleTaskDone(task.id))}>
               {task.done ? "✓" : ""}
             </Button>
             <TaskContent done={task.done}>
-              <Link to={`/tasks/${task.id}`}>{task.content}</Link>
+              <TaskLink to={`/tasks/${task.id}`}>{task.content}</TaskLink>
             </TaskContent>
             <Button remove onClick={() => dispatch(removeTask(task.id))}>
               🗑️
