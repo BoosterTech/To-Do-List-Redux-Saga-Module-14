@@ -23,19 +23,28 @@ export const SectionContainer = styled.div`
 `;
 
 export const Header = styled.h2`
+  font-weight: bold;
+  font-size: large;
+
   ${(props) =>
     props.headertype === "section__headerTop" &&
     `
     padding: 30px 0 0 15px;
-    font-weight: bold;
-    font-size: large;
+    
     `}
 
   ${(props) =>
     props.headertype === "section__header" &&
     `
       padding: 15px;
-      font-weight: bold;
-      font-size: large;
+     
+    `}
+
+    ${(props) =>
+    props.headertype === "section__author" &&
+    `
+    padding: 15px 0 0 0px;
+
+   
     `}
 `;
