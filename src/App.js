@@ -1,12 +1,11 @@
-import { HashRouter, Link, Switch, Route } from "react-router-dom";
+import { Link, Switch, Route, Redirect, HashRouter } from "react-router-dom";
 import TasksPage from "./features/tasks/TasksPage/index";
 import TaskPage from "./features/tasks/TaskPage/index";
 
-import AuthorPage from "./features/author/AuthorPage";
-import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
+import AuthorPage from "./features/author/index";
 
 const App = () => (
-  <HashRouter>
+  <HashRouter basename="/todo-list-module-14">
     <nav>
       <ul>
         <li>
@@ -18,7 +17,7 @@ const App = () => (
       </ul>
       <Switch>
         <Route path="/tasks/:id">
-          <TaskPage/>
+          <TaskPage />
         </Route>
         <Route path="/tasks">
           <TasksPage />
