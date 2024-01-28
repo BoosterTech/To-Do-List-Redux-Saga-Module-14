@@ -13,7 +13,7 @@ const TaskPage = () => {
     <MainWrapper>
       <Header title="Task details" />
       <Section
-        title={task? task.content:"Task Not Found 😔"}
+        title={task ? task.content : "Task Not Found 😔"}
         bodyContent={
           <>
             <strong>Completed: {task.done ? "Yes" : "No"}</strong>

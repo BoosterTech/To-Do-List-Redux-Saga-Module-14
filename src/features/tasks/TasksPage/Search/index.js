@@ -15,7 +15,7 @@ const Search = () => {
     } else {
       searchParams.set("search", target.value);
     }
-    history.push(`${location.pathname}?${searchParams.toString()}`)
+    history.push(`${location.pathname}?${searchParams.toString()}`);
   };
 
   return (
