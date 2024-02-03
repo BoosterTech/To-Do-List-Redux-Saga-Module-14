@@ -1,6 +1,6 @@
 export const getExampleTasks = async () => {
   const response = await fetch(
-    "http://localhost:3000/to-do-list-redux-saga/exampleTasks.json"
+    "To-Do-List-Redux-Saga-Module-14/exampleTasks.json"
   );
 
   if (!response.ok) {
