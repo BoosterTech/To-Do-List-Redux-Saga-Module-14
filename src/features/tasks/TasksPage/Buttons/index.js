@@ -16,13 +16,14 @@ const Buttons = () => {
   const areTasksEmpty = useSelector(selectAreTasksEmpty);
   const isAnyTaskDone = useSelector(selectIsAnyTaskDone);
   const isEveryTaskDone = useSelector(selectIsEveryTaskDone);
+  const loading = useSelector((state) => state.tasks.loading);
 
   const dispatch = useDispatch();
 
   return (
     <ButtonsWrapper>
-      <Button onClick={() => dispatch(fetchExampleTasks())}>
-        Load example tasks
+      <Button onClick={() => dispatch(fetchExampleTasks())} disabled={loading}>
+        {loading ? "Ładowanie..." : "Pobierz przykładowe zadania"}
       </Button>
       {!areTasksEmpty && (
         <>
