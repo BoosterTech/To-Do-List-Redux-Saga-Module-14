@@ -4,10 +4,10 @@ export const Navigation = () => {
   return (
     <StyledList>
       <li>
-        <StyledNavLink to="/tasks">Tasks</StyledNavLink>
+        <StyledNavLink to="/tasks">Lista Zadań</StyledNavLink>
       </li>
       <li>
-        <StyledNavLink to="/author">About Author</StyledNavLink>
+        <StyledNavLink to="/author">O Autorze</StyledNavLink>
       </li>
     </StyledList>
   );
