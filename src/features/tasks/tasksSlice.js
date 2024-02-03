@@ -1,22 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { loadTasksFromLocalStorage } from "./taskslocalStorage";
 
-// const initialState = {
-//   tasks: [],
-//   hideDone: false,
-// };
-
-// const loadedTasks = loadTasksFromLocalStorage();
-// if (Array.isArray(loadedTasks)) {
-//   initialState.tasks = loadedTasks;
-// }
-
 const tasksSlice = createSlice({
   name: "tasks",
   initialState: {
-    tasks:  Array.isArray(loadTasksFromLocalStorage())
-    ? loadTasksFromLocalStorage()
-    : [],
+    tasks: Array.isArray(loadTasksFromLocalStorage())
+      ? loadTasksFromLocalStorage()
+      : [],
     hideDone: false,
   },
   reducers: {
@@ -73,8 +63,6 @@ export const getTaskById = (state, taskId) =>
 
 export const selectTasksByQuery = (state, query) => {
   const tasks = selectTasks(state);
-
-  console.log(typeof tasks);
 
   if (!query || query.trim() === "") {
     return tasks;
