@@ -17,10 +17,9 @@ body {
   margin:0;
   padding-right: 15px;
   font-size: small;
-  overflow-x: hidden; 
+  overscroll-behavior-y:auto;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
-    overflow:hidden;
     overscroll-behavior-y:auto;
   }
 }
