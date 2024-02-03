@@ -6,12 +6,12 @@ export const StyledList = styled.ul`
   flex-direction: row;
   list-style: none;
   justify-content: center;
-  margin-bottom: 30px 0;
+  margin:auto;
   padding: 20px;
   background-color: teal;
   text-decoration: none;
   gap: 2rem;
-  width: 100vw;
+  width: 100%;
 `;
 
 export const StyledNavLink = styled(NavLink)`

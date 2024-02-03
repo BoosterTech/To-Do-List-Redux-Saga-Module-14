@@ -9,17 +9,21 @@ export const Wrapper = styled.section`
 export const SectionContainer = styled.div`
   background-color: ${({ theme }) => theme.color.White};
   margin: 10px 0;
+  display: flex;
 
   ${(props) =>
     props.id === "section__flex" &&
     `
-      display: flex;
       flex-direction: row;
 
       @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
       flex-direction: column;
-      } 
+      }  
     `}
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    flex-direction: column;
+  }
 `;
 
 export const Header = styled.h2`
@@ -30,7 +34,7 @@ export const Header = styled.h2`
     props.headertype === "section__headerTop" &&
     `
     padding: 30px 0 0 15px;
-    
+
     `}
 
   ${(props) =>
@@ -44,7 +48,9 @@ export const Header = styled.h2`
     props.headertype === "section__author" &&
     `
     padding: 15px 0 0 0px;
-
    
     `}
+
+@media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+  }
 `;
