@@ -7,6 +7,5 @@ export const MainWrapper = styled.main`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     width: 90vw;
-    
   }
 `;
