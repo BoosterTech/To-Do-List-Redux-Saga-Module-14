@@ -7,7 +7,7 @@ export const TaskListStyled = styled.ul`
   list-style: none;
   border-top: 1px solid rgb(221, 215, 215);
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     padding: 0 3px;
   }
 `;

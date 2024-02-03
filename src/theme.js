@@ -6,6 +6,8 @@ export const theme = {
     Martini: "#aaa2a2",
     Martini_Hover: "#197272e0",
     La_Palma: "#13910f",
+    Teal: "#008080",
+    Cinnabar: "#EE4545", //remove button normal mode
   },
   breakpoint: {
     mobile: "745px",
