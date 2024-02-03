@@ -6,3 +6,4 @@ export const saveTasksToLocalStorage = (tasks) => {
 
 export const loadTasksFromLocalStorage = () =>
   JSON.parse(localStorage.getItem(localStorageKey)) || [];
+

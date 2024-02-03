@@ -1,10 +1,22 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { loadTasksFromLocalStorage } from "./taskslocalStorage";
 
+// const initialState = {
+//   tasks: [],
+//   hideDone: false,
+// };
+
+// const loadedTasks = loadTasksFromLocalStorage();
+// if (Array.isArray(loadedTasks)) {
+//   initialState.tasks = loadedTasks;
+// }
+
 const tasksSlice = createSlice({
   name: "tasks",
   initialState: {
-    tasks: loadTasksFromLocalStorage(),
+    tasks:  Array.isArray(loadTasksFromLocalStorage())
+    ? loadTasksFromLocalStorage()
+    : [],
     hideDone: false,
   },
   reducers: {
@@ -34,6 +46,8 @@ const tasksSlice = createSlice({
   },
 });
 
+console.log(typeof tasks);
+
 export const {
   addTask,
   toggleHideDone,
@@ -47,6 +61,7 @@ export const {
 export const selectTasksState = (state) => state.tasks;
 export const selectTasks = (state) => selectTasksState(state).tasks;
 
+export const selectHideDone = (state) => selectTasksState(state).hideDone;
 export const selectAreTasksEmpty = (state) => selectTasks(state).length === 0;
 export const selectIsAnyTaskDone = (state) =>
   selectTasks(state).some(({ done }) => done);
@@ -57,7 +72,9 @@ export const getTaskById = (state, taskId) =>
   selectTasks(state).find(({ id }) => id === taskId);
 
 export const selectTasksByQuery = (state, query) => {
-  const tasks = selectTasksState(state);
+  const tasks = selectTasks(state);
+
+  console.log(typeof tasks);
 
   if (!query || query.trim() === "") {
     return tasks;
