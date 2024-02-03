@@ -2,18 +2,19 @@ import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
 import { Wrapper } from "./styled";
 import { SearchInput } from "./styled";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import searchQueryParamName from "./searchQueryParamName";
 
 const Search = () => {
   const location = useLocation();
   const history = useHistory();
-  const query = new URLSearchParams(location.search).get("search");
+  const query = new URLSearchParams(location.search).get(searchQueryParamName);
 
   const onInputChange = ({ target }) => {
     const searchParams = new URLSearchParams(location.search);
     if (target.value.trim() === "") {
-      searchParams.delete("search");
+      searchParams.delete(searchQueryParamName);
     } else {
-      searchParams.set("search", target.value);
+      searchParams.set(searchQueryParamName, target.value);
     }
     history.push(`${location.pathname}?${searchParams.toString()}`);
   };
