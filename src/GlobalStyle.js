@@ -15,10 +15,12 @@ body {
   font-family: 'Montserrat', sans-serif;
   width: 100vw;
   margin:0;
-  padding-right: 15px;;
+  padding-right: 15px;
   font-size: small;
-  
-  
-}
+  overflow-x: hidden; 
 
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    overflow: hidden;
+  }
+}
 `;

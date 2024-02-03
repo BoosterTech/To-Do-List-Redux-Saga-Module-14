@@ -10,12 +10,14 @@ export const StyledList = styled.ul`
   padding: 20px;
   background-color: ${({ theme }) => theme.color.Teal};
   text-decoration: none;
-  gap: 2rem;
-  width: 100%;
+  gap: 3rem;
+  max-width: 100%;
+  
 `;
 
 export const StyledNavLink = styled(NavLink)`
   text-decoration: none;
+  text-align: center;
   color: ${({ theme }) => theme.color.White};
   font-size: medium;
   &.active {
