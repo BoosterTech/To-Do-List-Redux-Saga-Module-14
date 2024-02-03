@@ -1,12 +1,16 @@
 [
-  { "content": "Load an App", "done": true, "id": "qoz530uXECAA3qlwCbqcr" },
   {
-    "content": "Set focus on Input field",
+    "content": "Załaduj Aplikacje",
+    "done": true,
+    "id": "qoz530uXECAA3qlwCbqcr"
+  },
+  {
+    "content": "Ustaw fokus w polu \"Dodaj nowe zadanie\"",
     "done": false,
     "id": "EwIWDLpNJzUmpS6y1UYDZ"
   },
   {
-    "content": "Start adding new Tasks to your List. Enjoy!",
+    "content": "Zacznij dodawać nowe zadania do swojej listy. Miłej zabawy!",
     "done": false,
     "id": "ybkxQx1daJ3JFZLe9OgGn"
   }

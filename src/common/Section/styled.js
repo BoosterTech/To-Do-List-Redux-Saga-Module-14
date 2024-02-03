@@ -4,6 +4,7 @@ export const Wrapper = styled.section`
   background-color: ${({ theme }) => theme.color.White};
   margin: 10px 0;
   padding: 0 10px 10px;
+  padding-bottom: 35px;
 `;
 
 export const SectionContainer = styled.div`

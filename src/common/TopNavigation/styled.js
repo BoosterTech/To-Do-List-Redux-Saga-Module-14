@@ -6,9 +6,9 @@ export const StyledList = styled.ul`
   flex-direction: row;
   list-style: none;
   justify-content: center;
-  margin:auto;
+  margin: auto;
   padding: 20px;
-  background-color: teal;
+  background-color: ${({ theme }) => theme.color.Teal};
   text-decoration: none;
   gap: 2rem;
   width: 100%;
@@ -16,7 +16,7 @@ export const StyledList = styled.ul`
 
 export const StyledNavLink = styled(NavLink)`
   text-decoration: none;
-  color: white;
+  color: ${({ theme }) => theme.color.White};
   font-size: medium;
   &.active {
     font-weight: bold;
