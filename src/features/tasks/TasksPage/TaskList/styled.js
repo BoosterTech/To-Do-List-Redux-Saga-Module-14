@@ -74,5 +74,6 @@ export const TaskLink = styled(Link)`
 
   &:hover {
     font-weight: bold;
+    text-decoration: underline;
   }
 `;
