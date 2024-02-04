@@ -4,22 +4,23 @@ import TaskPage from "./features/tasks/TaskPage/index";
 
 import AuthorPage from "./features/author/index";
 import { Navigation } from "./common/TopNavigation/Navigation";
+import { toAuthor, toTask, toTasks } from "./routes";
 
 const App = () => (
   <HashRouter basename="/todo-list-module-14">
     <Navigation />
     <Switch>
-      <Route path="/tasks/:id">
+      <Route path={toTask()}>
         <TaskPage />
       </Route>
-      <Route path="/tasks">
+      <Route path={toTasks()}>
         <TasksPage />
       </Route>
-      <Route path="/author">
+      <Route path={toAuthor()}>
         <AuthorPage />
       </Route>
       <Route path="/">
-        <Redirect to="/tasks" />
+        <Redirect to={toTasks()} />
       </Route>
     </Switch>
   </HashRouter>
