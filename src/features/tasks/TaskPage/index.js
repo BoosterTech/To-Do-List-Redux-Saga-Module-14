@@ -13,11 +13,13 @@ const TaskPage = () => {
     <MainWrapper>
       <Header title="Szczegóły zadania" />
       <Section
-        title={task ? task.content : "Nie znaleziono 😔"}
+        title={task ? task.content : "Nie znaleziono zadania😔"}
         bodyContent={
-          <>
-            <strong>Ukończono: {task.done ? "Tak" : "Nie"}</strong>
-          </>
+          !!task && (
+            <>
+              <strong>Ukończono: {task.done ? "Tak" : "Nie"}</strong>
+            </>
+          )
         }
         headertype="section__headerTop"
       />

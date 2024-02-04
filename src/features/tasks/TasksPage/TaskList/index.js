@@ -15,13 +15,14 @@ import {
 } from "../../tasksSlice";
 import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
 import searchQueryParamName from "../../TasksPage/Search/searchQueryParamName";
+import { toTask } from "../../../../routes";
 
 const TaskList = () => {
   const location = useLocation();
   const query = new URLSearchParams(location.search).get(searchQueryParamName);
 
-  const  tasks = useSelector((state) => selectTasksByQuery(state, query));
-  const hideDone  = useSelector(selectHideDone);
+  const tasks = useSelector((state) => selectTasksByQuery(state, query));
+  const hideDone = useSelector(selectHideDone);
 
   const dispatch = useDispatch();
 
@@ -33,7 +34,7 @@ const TaskList = () => {
             {task.done ? "✓" : ""}
           </Button>
           <TaskContent done={task.done}>
-            <TaskLink to={`/tasks/${task.id}`}>{task.content}</TaskLink>
+            <TaskLink to={toTask({ id: task.id })}>{task.content}</TaskLink>
           </TaskContent>
           <Button remove onClick={() => dispatch(removeTask(task.id))}>
             🗑️
