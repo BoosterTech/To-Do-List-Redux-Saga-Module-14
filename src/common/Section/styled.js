@@ -24,7 +24,7 @@ export const SectionContainer = styled.div`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     flex-direction: column;
-    align-items:center;
+    align-items: center;
   }
 `;
 
@@ -52,7 +52,4 @@ export const Header = styled.h2`
     padding: 15px 0 0 0px;
    
     `}
-
-@media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
-  }
 `;
