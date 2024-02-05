@@ -24,6 +24,7 @@ export const SectionContainer = styled.div`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     flex-direction: column;
+    align-items:center;
   }
 `;
 
