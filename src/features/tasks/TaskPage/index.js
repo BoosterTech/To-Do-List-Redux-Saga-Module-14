@@ -4,7 +4,7 @@ import Header from "../../../common/Header";
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 import { useSelector } from "react-redux";
 import { getTaskById } from "../tasksSlice";
-import { ContentWrapper, TaskTitleWrapper } from "./styled";
+import { ContentWrapper } from "./styled";
 
 const TaskPage = () => {
   const { id } = useParams();
@@ -18,7 +18,7 @@ const TaskPage = () => {
         bodyContent={
           !!task && (
             <ContentWrapper>
-              <strong>Ukończono: {task.done ? "Tak" : "Nie"}</strong>
+              <strong> Ukończono:</strong> {task.done ? "Tak" : "Nie"}
             </ContentWrapper>
           )
         }
