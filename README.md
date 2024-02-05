@@ -12,7 +12,7 @@
 ### Demo:  https://boostertech.github.io/To-Do-List-Redux-Saga-Module-14/
 Wide screen:
 
-![wideScreenPreview](https://github.com/BoosterTech/TODO-List-React/blob/6d5a8e4794e0ce717578afbdf9f3ba374acab5e6/images/previewPC.png) 
+![wideScreenPreview](https://github.com/BoosterTech/TODO-List-React/blob/6d5a8e4794e0ce717578afbdf9f3ba374acab5e6/images/previewPC.png](https://github.com/BoosterTech/To-Do-List-Redux-Saga-Module-14/blob/ef0dc69efd19306d5c8f3dde7bc3f1fafff679bd/images/previewPC.png)
 
 Narrow screen ( <768px ):
 
