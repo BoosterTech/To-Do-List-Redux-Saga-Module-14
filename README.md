@@ -14,7 +14,7 @@ Wide screen (width > 745px):
 
 ![wideScreenPreview](https://github.com/BoosterTech/To-Do-List-Redux-Saga-Module-14/blob/ef0dc69efd19306d5c8f3dde7bc3f1fafff679bd/images/previewPC.png)
 
-Mobile screen (width <745px):
+Mobile screen (width < 745px):
 
 ![narrowScreenPreview](https://github.com/BoosterTech/To-Do-List-Redux-Saga-Module-14/blob/2a129edc5e09480b507823d3f9e44a188a5d3212/images/previewMobile.png)
 
