@@ -2,7 +2,7 @@
 ## "Lista Zadań" - add tasks to the list, mark them done or undone, use single button to mark ALL DONE, hide done tasks, as well as remove tasks from the list
 ## Technologies used:
 - HTML, CSS, JavaScript
-- React
+- Create React App
 - React-Redux
 - Redux Toolkit
 - Redux-Saga
