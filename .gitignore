@@ -1,2 +1,11 @@
 node_modules
 build
+build/asset-manifest.json
+
+build/exampleTasks.json
+build/icon.png
+build/index.html
+build/share.png
+build/static/js/main.09212541.js
+build/static/js/main.09212541.js.LICENSE.txt
+build/static/js/main.09212541.js.map
