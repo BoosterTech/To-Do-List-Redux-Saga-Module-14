@@ -1,5 +1,5 @@
 # Lista Zadań
-## "Lista Zadań" - add tasks to the list, mark them done or undone, use single button to mark ALL DONE, hide done tasks, as well as remove tasks from the list
+## "Lista Zadań" - Add tasks to the list, mark them done or undone, use single button to mark ALL DONE, hide done tasks, remove tasks from the list
 ## Technologies used:
 - HTML, CSS, JavaScript
 - Create React App
@@ -10,14 +10,13 @@
 - Styled Components
 
 ### Demo:  https://boostertech.github.io/To-Do-List-Redux-Saga-Module-14/
-Wide screen:
+Wide screen (width > 745px):
 
 ![wideScreenPreview](https://github.com/BoosterTech/To-Do-List-Redux-Saga-Module-14/blob/ef0dc69efd19306d5c8f3dde7bc3f1fafff679bd/images/previewPC.png)
 
-Narrow screen ( <768px ):
+Mobile screen (width <745px):
 
 ![narrowScreenPreview](https://github.com/BoosterTech/To-Do-List-Redux-Saga-Module-14/blob/2a129edc5e09480b507823d3f9e44a188a5d3212/images/previewMobile.png)
-
 
 ## Navigating
 
@@ -49,6 +48,7 @@ Narrow screen ( <768px ):
 5. You can access details of the task by clicking on it:
 
 ![accessTaskdetailsGif](https://github.com/BoosterTech/To-Do-List-Redux-Saga-Module-14/blob/2a129edc5e09480b507823d3f9e44a188a5d3212/images/accessingTaskDetails.gif)
+
 
 ## Available Scripts
 
