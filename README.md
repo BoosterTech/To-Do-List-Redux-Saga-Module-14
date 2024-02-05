@@ -2,7 +2,7 @@
 ## "Lista Zadań" - add tasks to the list, mark them done or undone, use single button to mark ALL DONE, hide done tasks, as well as remove tasks from the list
 ## Technologies used:
 - HTML, CSS, JavaScript
-- React
+- Create React App
 - React-Redux
 - Redux Toolkit
 - Redux-Saga
@@ -12,33 +12,43 @@
 ### Demo:  https://boostertech.github.io/To-Do-List-Redux-Saga-Module-14/
 Wide screen:
 
-![wideScreenPreview](https://github.com/BoosterTech/TODO-List-React/blob/6d5a8e4794e0ce717578afbdf9f3ba374acab5e6/images/previewPC.png) 
+![wideScreenPreview](https://github.com/BoosterTech/To-Do-List-Redux-Saga-Module-14/blob/ef0dc69efd19306d5c8f3dde7bc3f1fafff679bd/images/previewPC.png)
 
 Narrow screen ( <768px ):
 
-![narrowScreenPreview](https://github.com/BoosterTech/TODO-List-React/blob/6d5a8e4794e0ce717578afbdf9f3ba374acab5e6/images/previewMobile.png)
+![narrowScreenPreview](https://github.com/BoosterTech/To-Do-List-Redux-Saga-Module-14/blob/2a129edc5e09480b507823d3f9e44a188a5d3212/images/previewMobile.png)
 
 
-## Navigating the page
+## Navigating
+
+### Navigating between pages:
+![navigatingBetweenPagesGif](https://github.com/BoosterTech/To-Do-List-Redux-Saga-Module-14/blob/2a129edc5e09480b507823d3f9e44a188a5d3212/images/navigating.gif)
+
+### Navigating on Main page:
+
 1. By clicking "***Dodaj zadanie***" button one can add a task to tasks list ("Lista zadań") section:
 
-![addTaskGif](https://github.com/BoosterTech/TODO-List-React/blob/6d5a8e4794e0ce717578afbdf9f3ba374acab5e6/images/addingTask.gif)
+![addTaskGif](https://github.com/BoosterTech/To-Do-List-Redux-Saga-Module-14/blob/2a129edc5e09480b507823d3f9e44a188a5d3212/images/addingTask.gif)
 
 2. By clicking "***green square***" button one can mark a task as "**done**", or double-click it to mark it "**undone**":
 
-![markDoneGif](https://github.com/BoosterTech/TODO-List-React/blob/6d5a8e4794e0ce717578afbdf9f3ba374acab5e6/images/markingTaskDoneClick.gif)
+![markDoneGif](https://github.com/BoosterTech/To-Do-List-Redux-Saga-Module-14/blob/2a129edc5e09480b507823d3f9e44a188a5d3212/images/markingTaskDone.gif)
 
 , also one can mark all tasks 'Done' by clicking  "***Ukończ wszystkie***" button:
 
-![markDoneGif](https://github.com/BoosterTech/TODO-List-React/blob/6d5a8e4794e0ce717578afbdf9f3ba374acab5e6/images/markingTaskDoneBtn.gif)
+![markDoneGif](https://github.com/BoosterTech/To-Do-List-Redux-Saga-Module-14/blob/2a129edc5e09480b507823d3f9e44a188a5d3212/images/markingAllTasksDone.gif)
 
 3. Clicking "***Pokaż***" or "***Ukryj***" button one can show as well as hide all accomplished tasks:
 
-![showHideDoneGif](https://github.com/BoosterTech/TODO-List-React/blob/6d5a8e4794e0ce717578afbdf9f3ba374acab5e6/images/hiddingDoneTask.gif)
+![showHideDoneGif](https://github.com/BoosterTech/To-Do-List-Redux-Saga-Module-14/blob/2a129edc5e09480b507823d3f9e44a188a5d3212/images/hiddingDoneTask.gif)
 
 4. Clicking "***red square***" will remove a task from the list:
 
-![removeTaskGif](https://github.com/BoosterTech/TODO-List-React/blob/6d5a8e4794e0ce717578afbdf9f3ba374acab5e6/images/removingTask.gif)
+![removeTaskGif](https://github.com/BoosterTech/To-Do-List-Redux-Saga-Module-14/blob/2a129edc5e09480b507823d3f9e44a188a5d3212/images/removingTask.gif)
+
+5. You can access details of the task by clicking on it:
+
+![accessTaskdetailsGif](https://github.com/BoosterTech/To-Do-List-Redux-Saga-Module-14/blob/2a129edc5e09480b507823d3f9e44a188a5d3212/images/accessingTaskDetails.gif)
 
 ## Available Scripts
 
