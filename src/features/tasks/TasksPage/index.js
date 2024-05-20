@@ -10,21 +10,21 @@ import { FetchExampleTasksButton } from "./Buttons/FetchExampleTasksButton";
 function TasksPage() {
   return (
     <MainWrapper>
-      <Header title="Lista zadań" />
+      <Header title="Tasks List" />
       <Section
-        title="Dodaj nowe zadanie"
+        title="Add new task"
         extraHeaderContent={<FetchExampleTasksButton />}
         bodyContent={<Form />}
         id="section__flex"
         headertype="section__header"
       />
       <Section
-        title="Wyszukiwarka"
+        title="Search tasks"
         bodyContent={<Search />}
         headertype="section__headerTop"
       />
       <Section
-        title="Lista zadań"
+        title="Tasks list"
         extraHeaderContent={<Buttons />}
         bodyContent={<TaskList />}
         id="section__flex"

@@ -18,7 +18,7 @@ const TaskPage = () => {
         bodyContent={
           !!task && (
             <ContentWrapper>
-              <strong> Ukończono:</strong> {task.done ? "Tak" : "Nie"}
+              <strong> Accomplished:</strong> {task.done ? "Tak" : "Nie"}
             </ContentWrapper>
           )
         }

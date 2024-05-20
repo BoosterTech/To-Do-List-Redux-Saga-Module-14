@@ -10,7 +10,7 @@ export const FetchExampleTasksButton = () => {
   return (
     <Wrapper>
       <Button onClick={() => dispatch(fetchExampleTasks())} disabled={loading}>
-        {loading ? "Ładowanie..." : "Pobierz przykładowe zadania"}
+        {loading ? "Loading..." : "Download example tasks"}
       </Button>
     </Wrapper>
   );

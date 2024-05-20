@@ -27,14 +27,14 @@ const Buttons = () => {
             disabled={!isAnyTaskDone}
           >
             {" "}
-            {hideDone ? "Pokaż" : "Ukryj"} ukończone{" "}
+            {hideDone ? "Show" : "Hide"} accomplished{" "}
           </Button>
           <Button
             disabled={isEveryTaskDone}
             onClick={() => dispatch(setAllDone())}
           >
             {" "}
-            Ukończ wszystkie{" "}
+            Accomplish all{" "}
           </Button>
         </>
       )}
