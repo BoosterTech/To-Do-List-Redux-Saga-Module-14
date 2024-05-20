@@ -5,10 +5,10 @@ export const Navigation = () => {
   return (
     <StyledList>
       <li>
-        <StyledNavLink to={toTasks()}>Lista Zadań</StyledNavLink>
+        <StyledNavLink to={toTasks()}>Tasks List</StyledNavLink>
       </li>
       <li>
-        <StyledNavLink to={toAuthor()}>O Autorze</StyledNavLink>
+        <StyledNavLink to={toAuthor()}>About Author</StyledNavLink>
       </li>
     </StyledList>
   );
