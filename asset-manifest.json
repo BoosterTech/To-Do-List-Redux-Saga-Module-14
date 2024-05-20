@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/To-Do-List-Redux-Saga-Module-14/static/js/main.0c27c658.js",
+    "main.js": "/To-Do-List-Redux-Saga-Module-14/static/js/main.58cf219f.js",
     "index.html": "/To-Do-List-Redux-Saga-Module-14/index.html",
-    "main.0c27c658.js.map": "/To-Do-List-Redux-Saga-Module-14/static/js/main.0c27c658.js.map"
+    "main.58cf219f.js.map": "/To-Do-List-Redux-Saga-Module-14/static/js/main.58cf219f.js.map"
   },
   "entrypoints": [
-    "static/js/main.0c27c658.js"
+    "static/js/main.58cf219f.js"
   ]
 }
