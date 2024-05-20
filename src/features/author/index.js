@@ -5,7 +5,7 @@ import Content from "./authorPageContent";
 
 const Author = () => (
   <MainWrapper>
-    <Header title="O Autorze" />
+    <Header title="About Author" />
     <Section
       title="Dariusz Podczasik"
       bodyContent={<Content />}
