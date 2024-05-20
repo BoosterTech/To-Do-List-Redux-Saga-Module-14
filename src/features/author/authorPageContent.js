@@ -11,19 +11,21 @@ const Content = () => {
     //   outstanding web applications.
     // </div>
     <div>
-      Jako <strong>Junior Front-End Developer</strong> posiadam imponujący
-      arsenał umiejętności w zakresie HTML, CSS, JavaScript, React, Redux-Saga,
-      React-Router.
+      As a <strong>Junior Front-End Developer</strong>, I possess a robust skill
+      set in HTML, CSS, JavaScript, React, Redux-Saga, and React-Router. I
+      specialize in designing and maintaining responsive websites that deliver
+      seamless user experiences.
       <p>
-        Specjalizuję się w projektowaniu i utrzymywaniu responsywnych stron
-        internetowych, które zapewniają płynną obsługę użytkownika. Moja wiedza
-        polega na tworzeniu dynamicznych, angażujących interfejsów poprzez
-        pisanie czystego i zoptymalizowanego kodu, z wykorzystaniem
-        najnowocześniejszych narzędzi i technik programistycznych.
-      </p>{" "}
-      Jestem także graczem zespołowym, który rozwija się we współpracy w
-      zespole w celu tworzenia wyjątkowych aplikacji
-      internetowych.
+        {" "}
+        My expertise lies in creating dynamic and engaging interfaces by writing
+        clean, optimized code using cutting-edge tools and development
+        techniques.
+      </p>
+      <p>
+        {" "}
+        Additionally, I am a collaborative team player who thrives in team
+        environments, working together to create exceptional web applications.
+      </p>
     </div>
   );
 };
